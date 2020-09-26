@@ -127,7 +127,6 @@ section hr{
 .grid{
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 3fr 1fr 0.5fr 0.5fr;
-    border: 1px solid gold;
     margin-top: 2rem;
 }
 
@@ -300,6 +299,10 @@ aside{
     grid-column: 4;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    width: 100%;
+}
+.media iframe{
+    width: 100%;
 }
 
 .media-info{
@@ -442,9 +445,9 @@ aside{
 }
 
 
-nav{
-    margin-bottom: 10vh;
-}
+
+/*NAV*/
+
 
 nav hr{
     border: 1px solid #ddd;
@@ -459,6 +462,14 @@ nav hr{
     display: grid;
     grid-template-columns: repeat(5,1fr) 1.25fr;
     margin: 3rem 4rem;
+}
+nav::after{
+    content: '';
+    display: block;
+    width: calc(100%-8rem);
+    background-color: #ccc;
+    height: 1px;
+    margin: 0 4rem;
 }
 
 .nav-title{
@@ -485,7 +496,7 @@ nav hr{
 
 .nav-links a{
     text-decoration: none;
-    line-height: 1.5rem;
+    line-height: 1.5em;
     font-size: 14px;
     color: black;
 }
@@ -494,3 +505,53 @@ nav hr{
     text-decoration: underline;
 }
 
+.nav-subscribe{
+    position: relative;
+    padding-left: 0.5rem;
+}
+.nav-subscribe::before{
+    content: '';
+    background-color: #ccc;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+}
+.nav-links .nav-bold{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-links .line::before{
+    content: '';
+    display: block;
+    width: 80%;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0.5rem 0;
+
+}
+
+
+/*FOOTER*/
+
+footer{
+    height: 10vh;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-list a{
+    list-style: none;
+    text-decoration: none;
+    color: #555;
+    font-size: 12px;
+    margin: 0 0.5rem;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
