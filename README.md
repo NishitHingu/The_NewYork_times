@@ -1,2 +1,2 @@
-This is a html/css project that i made to practice css grids adn flexbox
-view at: https://nishithingu.github.io/The_NewYork_times/
+####This is a html/css project to practice css grids and flexbox
+####view at: https://nishithingu.github.io/The_NewYork_times/
